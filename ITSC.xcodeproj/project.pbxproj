@@ -13,6 +13,11 @@
 		34EBE011271F08E2005CC9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EBE00F271F08E2005CC9EB /* Main.storyboard */; };
 		34EBE013271F08E3005CC9EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34EBE012271F08E3005CC9EB /* Assets.xcassets */; };
 		34EBE01E271F0910005CC9EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34EBE01D271F0910005CC9EB /* LaunchScreen.storyboard */; };
+		7C5878792740BDDB00690539 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5878782740BDDB00690539 /* TableCell.swift */; };
+		7C58787B2740BE3000690539 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58787A2740BE3000690539 /* TableController.swift */; };
+		7C58787D2740C01400690539 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58787C2740C01400690539 /* TabBarController.swift */; };
+		7C5878822740EED700690539 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5878812740EED700690539 /* SwiftSoup */; };
+		7C58788427412B4900690539 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C58788327412B4900690539 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		34EBE012271F08E3005CC9EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34EBE017271F08E3005CC9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EBE01D271F0910005CC9EB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C5878782740BDDB00690539 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		7C58787A2740BE3000690539 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		7C58787C2740C01400690539 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		7C58788327412B4900690539 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5878822740EED700690539 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,10 @@
 				34EBE00B271F08E2005CC9EB /* SceneDelegate.swift */,
 				34EBE00D271F08E2005CC9EB /* ViewController.swift */,
 				34EBE00F271F08E2005CC9EB /* Main.storyboard */,
+				7C58787C2740C01400690539 /* TabBarController.swift */,
+				7C5878782740BDDB00690539 /* TableCell.swift */,
+				7C58788327412B4900690539 /* DetailController.swift */,
+				7C58787A2740BE3000690539 /* TableController.swift */,
 				34EBE012271F08E3005CC9EB /* Assets.xcassets */,
 				34EBE017271F08E3005CC9EB /* Info.plist */,
 				34EBE01D271F0910005CC9EB /* LaunchScreen.storyboard */,
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = ITSC;
+			packageProductDependencies = (
+				7C5878812740EED700690539 /* SwiftSoup */,
+			);
 			productName = ITSC;
 			productReference = 34EBE006271F08E2005CC9EB /* ITSC.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 34EBDFFD271F08E2005CC9EB;
+			packageReferences = (
+				7C5878802740EED700690539 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 34EBE007271F08E2005CC9EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				34EBE00E271F08E2005CC9EB /* ViewController.swift in Sources */,
+				7C58788427412B4900690539 /* DetailController.swift in Sources */,
 				34EBE00A271F08E2005CC9EB /* AppDelegate.swift in Sources */,
+				7C5878792740BDDB00690539 /* TableCell.swift in Sources */,
+				7C58787D2740C01400690539 /* TabBarController.swift in Sources */,
+				7C58787B2740BE3000690539 /* TableController.swift in Sources */,
 				34EBE00C271F08E2005CC9EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C5878802740EED700690539 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C5878812740EED700690539 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C5878802740EED700690539 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34EBDFFE271F08E2005CC9EB /* Project object */;
 }
